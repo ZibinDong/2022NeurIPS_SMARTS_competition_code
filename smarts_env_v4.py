@@ -4,7 +4,7 @@ import gym
 import numpy as np
 import random
 import math
-import copy
+
 
 class ObsWrapper(gym.ObservationWrapper):
     '''
@@ -805,64 +805,64 @@ class MultiScenarioEnv(gym.Env):
   
 
   
-scenario_list = [
-    # "1_to_2lane_left_turn_c_0", # 0
-    # "1_to_2lane_left_turn_c_1", # 1
+# scenario_list = [
+#     # "1_to_2lane_left_turn_c_0", # 0
+#     # "1_to_2lane_left_turn_c_1", # 1
     
-    # "1_to_2lane_left_turn_t_0", # 2
-    # "1_to_2lane_left_turn_t_1", # 3
+#     # "1_to_2lane_left_turn_t_0", # 2
+#     # "1_to_2lane_left_turn_t_1", # 3
     
-    # "3lane_merge_single_agent_0", # 4
-    # "3lane_merge_single_agent_1", # 5
-    # "3lane_merge_single_agent_2", # 6
+#     # "3lane_merge_single_agent_0", # 4
+#     # "3lane_merge_single_agent_1", # 5
+#     # "3lane_merge_single_agent_2", # 6
     
-    # "3lane_cruise_single_agent_0", # 7
-    # "3lane_cruise_single_agent_1", # 8
-    # "3lane_cruise_single_agent_2", # 9
+#     # "3lane_cruise_single_agent_0", # 7
+#     # "3lane_cruise_single_agent_1", # 8
+#     # "3lane_cruise_single_agent_2", # 9
     
-    # "3lane_cut_in_0", # 10
-    # "3lane_cut_in_1", # 11
-    # "3lane_cut_in_2", # 12
+#     # "3lane_cut_in_0", # 10
+#     # "3lane_cut_in_1", # 11
+#     # "3lane_cut_in_2", # 12
     
-    # "3lane_overtake_0", # 13
-    # "3lane_overtake_1", # 14
-    # "3lane_overtake_2", # 15
+#     # "3lane_overtake_0", # 13
+#     # "3lane_overtake_1", # 14
+#     # "3lane_overtake_2", # 15
     
-    # "loop",
-    # "4lane_t",
-    # "6lane",
-    # "2lane_circle",
+#     # "loop",
+#     # "4lane_t",
+#     # "6lane",
+#     # "2lane_circle",
     
-    # "left_c_0",
-    # "left_c_1",
+#     # "left_c_0",
+#     # "left_c_1",
     
-    # "left_t_0",
-    # "left_t_1",
+#     # "left_t_0",
+#     # "left_t_1",
     
-    # "right_c_0",
-    # "right_c_1",
+#     # "right_c_0",
+#     # "right_c_1",
     
-    # "right_t_0",
-    # "right_t_1",
+#     # "right_t_0",
+#     # "right_t_1",
     
-    # "cruise_0",
-    # "cruise_1",
-    # "cruise_2",
+#     # "cruise_0",
+#     # "cruise_1",
+#     # "cruise_2",
     
-    # "merge_0",
-    # "merge_1",
-    "merge_2",
+#     # "merge_0",
+#     # "merge_1",
+#     "merge_2",
     
-    # "cut_in_0",
-    # "cut_in_1",
-    # "cut_in_2",
+#     # "cut_in_0",
+#     # "cut_in_1",
+#     # "cut_in_2",
     
-    # "overtake_0",
-    # "overtake_1",
-    # "overtake_2",
+#     # "overtake_0",
+#     # "overtake_1",
+#     # "overtake_2",
 
-    # "curve_0",
-]  
+#     # "curve_0",
+# ]  
 def make(
     scenario: str,
     default_agent_id: str = "Agent_0",
