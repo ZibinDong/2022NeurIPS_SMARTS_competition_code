@@ -76,7 +76,3 @@ Reasonable and effective rule constraints can not only help us simplify the lear
 The overall training and testing procedures are described in the figure below.
 
 ![model-3](./assets/model-3.jpg)
-
-## 3 Code Link
-
-[GrandpaDZB/2022NeurIPS_SMARTS_competition_code (github.com)](https://github.com/GrandpaDZB/2022NeurIPS_SMARTS_competition_code)
